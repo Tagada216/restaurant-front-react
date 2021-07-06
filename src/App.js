@@ -4,6 +4,9 @@ import DishesList from "./composants/DishesList";
 import CustList from "./composants/CustList";
 import PaymentList from "./composants/PaymentList";
 
+import LogoSvg from './assets/images/app-logo.svg'
+import userPng from './assets/images/user.png'
+
 function App() {
   //Donnée State : 
 
@@ -286,7 +289,7 @@ function App() {
                         role="button"
                         aria-expanded="false"
                       >
-                        <img src="assets/images/user.png" alt="user profile" />
+                        <img src={userPng} alt="user profile" />
                       </a>
                       <ul
                         className="dropdown-menu"
@@ -331,7 +334,7 @@ function App() {
                 <a className="app-logo" href="index.html">
                   <img
                     className="logo-icon me-2"
-                    src="assets/images/app-logo.svg"
+                    src={LogoSvg}
                     alt="logo"
                   />
                   <span className="logo-text">PORTAL</span>
